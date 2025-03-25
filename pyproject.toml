@@ -1,0 +1,30 @@
+[project]
+name = "pyronounce"
+version = "0.1.0"
+description = "A package to guess how pronounceable words are"
+readme = "README.md"
+requires-python = ">=3.7"
+license = {text = "MIT"}
+authors = [
+    {name = "Yasar Kocal", email = "uyasarkocal+pypi@gmail.com"},
+]
+dependencies = [
+    "scikit-learn",
+    "numpy",
+    "scipy",
+    "click",
+]
+
+[project.optional-dependencies]
+dev = [
+    "pytest",
+    "black",
+    "isort",
+]
+
+[project.scripts]
+pyronounce = "pyronounce.cli:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
