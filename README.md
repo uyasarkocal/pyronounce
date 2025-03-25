@@ -12,9 +12,18 @@ PyRonounce analyzes words to determine how difficult they are to pronounce based
 
 The package uses a machine learning model trained on English words of varying pronounceability difficulty.
 
+## Example
+```bash
+λ ~/ uvx pyronounce -d squirrel zeitgeist pencil deliberation
+'squirrel' (/skwɝəl/): moderate (score: 0.52)
+'zeitgeist' (/tsaɪtɡaɪst/): hard (score: 0.31)
+'pencil' (/pɛnsəl/): easy (score: 0.68)
+'deliberation' (/dɪlɪbɝeɪʃən/): moderate (score: 0.48)
+```
 ## Installation
 
 You can install PyRonounce using pip:
+
 
 ```bash
 pip install pyronounce
@@ -23,13 +32,13 @@ pip install pyronounce
 Or using UV for improved performance:
 
 ```bash
-uv pip install pyronounce
+uv add pyronounce
 ```
 
 To install from source:
 
 ```bash
-git clone https://github.com/yourusername/pyronounce.git
+git clone https://github.com/uyasarkocal/pyronounce.git
 cd pyronounce
 pip install -e .
 ```
@@ -115,10 +124,6 @@ Words are classified into these categories:
 - **Moderate** (score > 0.45)
 - **Hard** (score > 0.25)
 - **Very Hard** (score <= 0.25)
-
-## Contributing
-
-Contributions are welcome! Please feel free to submit a Pull Request.
 
 ## License
 

@@ -8,3 +8,7 @@ wheels/
 
 # Virtual environments
 .venv
+
+# Generated data files
+pyronounce/data/cmu_dict_cache.json
+pyronounce/data/pronunciation_dict.json
