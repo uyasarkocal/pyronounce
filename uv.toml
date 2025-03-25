@@ -1,5 +1,0 @@
-[build-backend]
-name = "hatchling"
-
-[editable]
-mode = "development" 

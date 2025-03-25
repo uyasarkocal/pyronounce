@@ -10,7 +10,7 @@ authors = [
 ]
 dependencies = [
     "scikit-learn",
-    "numpy",
+    "numpy>=1.22.0",
     "scipy",
     "click",
 ]
