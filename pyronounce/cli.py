@@ -3,7 +3,7 @@ Command-line interface for the pyronounce package.
 """
 
 import sys
-import json
+import json as json_lib
 import click
 from .core import PronounceabilityAssessor
 
@@ -62,7 +62,7 @@ def main(words, detailed, text, json, retrain):
     
     # Output results
     if json:
-        click.echo(json.dumps(results, indent=2))
+        click.echo(json_lib.dumps(results, indent=2))
     else:
         if text:
             click.echo(f"Text: '{results['text']}'")
